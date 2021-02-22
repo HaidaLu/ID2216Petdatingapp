@@ -240,4 +240,11 @@ public class MainActivity extends AppCompatActivity {
         finish();
         return;
     }
+
+    public void goToProfile(View view) {
+        Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+        intent.putExtra("userSex",userSex);
+        startActivity(intent);
+        return;
+    }
 }
