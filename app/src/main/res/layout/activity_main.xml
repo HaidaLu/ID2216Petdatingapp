@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
 
     <com.lorentzos.flingswipe.SwipeFlingAdapterView
         android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="608dp"
-        android:background="#ffeee9e2"
+        android:layout_height="630dp"
+        android:background="@color/white"
         app:rotation_degrees="15.5"
         tools:context=".MyActivity" />
 
@@ -24,15 +24,18 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#FFFFFF"
             android:onClick="logoutUser"
-            android:text="SignOUt" />
+            android:text="SignOUt"
+            app:backgroundTint="#A39D9D" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
             android:onClick="goToProfile"
-            android:text="Profile" />
+            android:text="Profile"
+            app:backgroundTint="#9C9C9C" />
     </LinearLayout>
 
 </LinearLayout>
