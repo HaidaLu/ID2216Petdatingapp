@@ -13,9 +13,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginRight="300dp"
-        android:text="UserName:"
+        android:layout_marginEnd="325dp"
+        android:layout_marginRight="325dp"
+        android:text="Email:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title_login" />
