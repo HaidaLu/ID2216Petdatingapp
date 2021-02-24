@@ -291,4 +291,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         return;
     }
+
+    public void goToCommunity(View view) {
+        Intent intent = new Intent(MainActivity.this,CommunityActivity.class);
+        startActivity(intent);
+        return;
+    }
 }
