@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 cards obj = (cards)dataObject;
                 String userId = obj.getUserId();
                 usersDb.child(userId).child("connections").child("nope").child(currentUId).setValue(true);
-                Toast.makeText(MainActivity.this,"left",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Dislike",Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 String userId = obj.getUserId();
                 usersDb.child(userId).child("connections").child("yep").child(currentUId).setValue(true);
                 isConnectionMatch(userId);
-                Toast.makeText(MainActivity.this,"right",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Like!",Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()){
-                    Toast.makeText(MainActivity.this, "new Connection", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "It's a new MATCH!", Toast.LENGTH_LONG).show();
 
                     String key = FirebaseDatabase.getInstance().getReference().child("Chat").push().getKey();
 
